@@ -1,0 +1,17 @@
+<mat-drawer-container class="page">
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <a href="/home"> <mat-icon>home</mat-icon> </a>
+  </mat-drawer>
+
+  <div class="content">
+    <div class="toggle-bar">
+      <button class="nav-button" type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>view_list</mat-icon>
+      </button>
+    </div>
+    <div class="modules">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</mat-drawer-container>
